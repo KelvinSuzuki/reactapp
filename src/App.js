@@ -67,6 +67,7 @@ function App() {
 
       <footer class="rodape">
         <p>Bikcraft. Alguns Direitos Reservados.</p>
+        <p>kelvin Suzuki</p>
       </footer>
     </div>
   );
