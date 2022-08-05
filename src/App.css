@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+html {
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0rem;
+  background: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  gap: 6rem;
+  justify-items: center;
+  margin-top: 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+h1,
+h2,
+h3 {
+  margin: 0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+header {
+  display: grid;
+  gap: 6rem;
+  justify-items: center;
+  margin-bottom: 65px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  margin: 0rem 2rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  /* box-shadow: 0.2rem solid #e21; */
+  box-shadow: 0rem 0rem 0rem 0.2rem #e21;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
+}
+
+.introducao {
+  background: #fff;
+  padding: 4rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+  justify-items: end;
+}
+
+.introducao h1 {
+  font-size: 3.2rem;
+}
+
+.botao {
+  text-decoration: none;
   color: white;
+  font-size: 1.6rem;
+  background: #e21;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border-radius: 0.4rem;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.botao:hover {
+  background: #900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.introducao h1::before {
+  content: "";
+  width: 6rem;
+  height: 0.4rem;
+  background: #e21;
+  position: absolute;
+  top: 3rem;
+  right: -3rem;
+}
+
+.sub {
+  align-self: center;
+}
+
+.subtitulo {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 4rem;
+}
+
+.vantagens {
+  background: #fff;
+  padding: 4rem;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 2rem;
+  padding: 2rem;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 4rem;
+  box-sizing: border-box;
+  margin-top: 65px;
+}
+
+.vantagens h3 {
+  font-size: 2.2rem;
+}
+
+.vantagens-item:hover {
+  border-left: solid 2px #e21;
+}
+
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.sub {
+  background-image: url("/src/img/onda.svg");
 }
