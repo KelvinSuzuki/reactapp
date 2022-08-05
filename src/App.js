@@ -1,6 +1,9 @@
 import "./App.css";
 import logo from "./img/bikcraft.svg";
 import bike from "./img/bicicleta.jpg";
+import eletrica from "./img/eletrica.svg";
+import velocidade from "./img/velocidade.svg";
+import rastreador from "./img/rastreador.svg";
 
 function App() {
   return (
@@ -38,21 +41,21 @@ function App() {
         <article>
           <div class="vantagens">
             <div class="vantagens-item">
-              {/* <img src="./img/eletrica.svg" alt=""> */}
+              <img src={eletrica} alt=""></img>
               <h3>Motor Elétrico</h3>
               <p>
                 Permite você viajar distâncias inimaginaveis com a sua bike.
               </p>
             </div>
             <div class="vantagens-item">
-              {/* <img src="./img/velocidade.svg" alt=""> */}
+              <img src={velocidade} alt=""></img>
               <h3>40 km/h</h3>
               <p>
                 A mais rápida bicicleta elétrica disponível hoje no mercado.
               </p>
             </div>
             <div class="vantagens-item">
-              {/* <img src="./img/rastreador.svg" alt=""> */}
+              <img src={rastreador} alt=""></img>
               <h3>Rastreador</h3>
               <p>
                 Rastreador e sistema anti-furto para garantir o seu sossego.
